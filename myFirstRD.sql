@@ -45,6 +45,13 @@ VALUES
 (3, 'Guitar, Piano, Violin'),
 (4, 'Guitar, Piano, Violin');
 
+INSERT INTO instructor_phone (phoneNumber, instructorID)
+VALUES
+('555-123-4567', 1),
+('555-234-5678', 2),
+('555-345-6789', 3),
+('555-456-7890', 4);
+
 INSERT INTO price_list (price, lessonType, lessonSkill)
 VALUES
 (150, 'individual', 'beginner'),
@@ -75,24 +82,6 @@ VALUES
 (2, '2024-02-06 03:45 PM', 2),
 (4, '2024-02-01 10:30 AM', 4);
 
-INSERT INTO ensemble_lesson (lessonID, genre, minStudents, maxStudents)
-VALUES
-(3, 'rock', 5, 15),
-(6, 'classical', 5, 15),
-(9, 'punk', 5, 15),
-(11, 'rock', 5, 15),
-(14, 'classical', 5, 15),
-(13, 'punk', 5, 15);
-
-INSERT INTO group_lesson (lessonID, minStudents, maxStudents, instrument)
-VALUES
-(5, 4, 12, 'Guitar'),
-(2, 4, 12, 'Piano'),
-(8, 4, 12, 'Violin'),
-(10, 4, 12, 'Guitar'),
-(12, 4, 12, 'Piano'),
-(15, 4, 12, 'Violin');
-
 INSERT INTO student_lesson (studentID, lessonID, siblingDiscount)
 VALUES
 (2, 2, TRUE),
@@ -111,6 +100,33 @@ VALUES
 (8, 15, FALSE),
 (9, 1, FALSE),
 (7, 13, FALSE);
+
+INSERT INTO ensemble_lesson (lessonID, genre, minStudents, maxStudents)
+VALUES
+(3, 'rock', 5, 15),
+(6, 'classical', 5, 15),
+(9, 'punk', 5, 15),
+(11, 'rock', 5, 15),
+(14, 'classical', 5, 15),
+(13, 'punk', 5, 15);
+
+INSERT INTO group_lesson (lessonID, minStudents, maxStudents, instrument)
+VALUES
+(5, 4, 12, 'Guitar'),
+(2, 4, 12, 'Piano'),
+(8, 4, 12, 'Violin'),
+(10, 4, 12, 'Guitar'),
+(12, 4, 12, 'Piano'),
+(15, 4, 12, 'Violin');
+
+INSERT INTO individual_lesson (lessonID, instrument)
+VALUES
+(1, 'Guitar'),
+(4, 'Piano'),
+(7, 'Violin'),
+(2, 'Guitar'),
+(3, 'Piano'),
+(8, 'Violin');
 
 INSERT INTO student_phone (phoneNumber, studentID)
 VALUES

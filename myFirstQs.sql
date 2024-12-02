@@ -82,8 +82,8 @@ CREATE VIEW room_for_ensemble AS -- create a view (virtual table) for easier acc
   
 SELECT
 	TO_CHAR(TO_DATE(l.date, 'YYYY-MM-DD'), 'Day') AS day, -- converting VARCHAR type for date to DATE type and then to CHAR type with alias for day column
-  e.genre AS genre, -- alias for genre column
-    CASE -- check if specific case is met
+	e.genre AS genre, -- alias for genre column
+	CASE -- check if specific case is met
         WHEN 15 - COUNT(sl.studentID) = 0 THEN 'no_seats' -- if 15 - count of students taking lesson = 0, there is no room
         WHEN 15 - COUNT(sl.studentID) <= 2 THEN '1_or_2_seats' -- if 15 - count of students taking lesson <= 2, there is some room
         ELSE 'many_seats' -- if not set as many seats left

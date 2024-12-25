@@ -25,7 +25,7 @@ CREATE VIEW students_and_siblings AS -- create a view (virtual table) for easier
 WITH siblingCounts AS ( -- temp. table for count
     SELECT
         s.studentID, -- fetching each studentID
-        COUNT(sib.studentID) AS num_siblings -- count how many studentIDs are referenced in a students studentID_0 (sibling) and alias column and NOT referenced
+        COUNT(sib.studentID) AS num_siblings -- count how many studentIDs are referenced in a students studentID_0 (sibling) and NOT referenced aliased
     FROM
         student s -- student table
     LEFT JOIN

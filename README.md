@@ -1,4 +1,4 @@
-A database for a hypothetical music school that handles lectures, students, instructors, instruments and rental
+A database for a hypothetical music school that handles lessons, students, instructors, instruments and rental
 
 myFirstCM - A conceptual model for the school made in Astah
 
@@ -8,4 +8,4 @@ myFirstDB - The SQL script for the database that involve entities and their rela
 
 myFirstRD - Randomly generated data for testing purposes of the database.
 
-myFirstQs - Queries for fetching data, i.e. how many lectures per year, how many students have siblings taking classes concurrently, what instructors are giving what lessons for a current month and how much spots there are available to book a ensamble lecture.
+myFirstQs - Queries for fetching data, i.e. how many lessons by type per year, how many students have siblings taking classes concurrently, the amount of lessons given by instructors for a month and how many spots are available to book a ensamble lesson.
